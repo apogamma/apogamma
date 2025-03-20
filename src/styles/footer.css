@@ -1,0 +1,58 @@
+/* Variable definitions for royal blue and gold */
+:root {
+    --royal-blue: #17318C;
+    --royal-blue-light: #1E55BB;
+    --old-glory-gold: #FFD700;
+    --old-glory-gold-light: #FFDF33;
+  }
+  
+  .text-gold {
+    color: var(--old-glory-gold);
+  }
+  
+  .footer-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  
+  .footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  .footer-link:hover {
+    color: var(--old-glory-gold);
+    text-decoration: none;
+  }
+  
+  .footer-icon {
+    color: var(--old-glory-gold-light);
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.2s ease;
+  }
+  
+  .social-link:hover {
+    background-color: var(--old-glory-gold);
+    color: var(--royal-blue);
+  }
+  
+  .mini-text {
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+  
+  .fs-7 {
+    font-size: 0.85rem;
+  }

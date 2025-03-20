@@ -1,0 +1,75 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
+
+/* Variable definitions for royal blue and gold */
+:root {
+  --royal-blue: #17318C;
+  --royal-blue-light: #1E55BB;
+  --old-glory-gold: #FFD700;
+  --old-glory-gold-light: #FFDF33;
+}
+
+/* Header Styles */
+.page-header {
+  padding: 60px 0;
+  margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('src/assets/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax effect */
+  z-index: 1;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(23, 49, 140, 0.55), rgba(30, 85, 187, 0.55));
+  z-index: 2;
+}
+
+.header-title {
+  font-weight: 800;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.page-header .container {
+  position: relative;
+  z-index: 10;
+}
+
+.page-header .menu-btn,
+.page-header a {
+  position: relative;
+  z-index: 11;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-btn:hover {
+  transform: scale(1.1);
+}

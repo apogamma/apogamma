@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+  --royal-blue: #17318C;
+  --royal-blue-light: #1E55BB;
+  --old-glory-gold: #FFD700;
+  --old-glory-gold-light: #FFDF33;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.board-member-card {
+  transition: all 0.3s ease;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.board-member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.position-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--royal-blue);
+  margin-bottom: 4px;
+}
+
+.member-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.member-bio {
+  color: #6c757d;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.member-email {
+  display: inline-flex;
+  align-items: center;
+  color: var(--royal-blue);
+  font-weight: 500;
+  font-size: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.member-email:hover {
+  color: var(--royal-blue-light);
+  text-decoration: none;
+}
+
+.member-image-container {
+  position: relative;
+  padding-bottom: 110%;
+  overflow: hidden;
+}
+
+.member-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: filter 0.3s ease;
+}
+
+.bio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(23, 49, 140, 0.9);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.has-bio:hover .member-image {
+  filter: blur(3px);
+}
+
+.has-bio:hover .bio-overlay {
+  opacity: 1;
+}
+
+.board-intro {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #495057;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 2.5rem;
+  display: inline-block;
+  color: var(--royal-blue);
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--royal-blue);
+}
+
+.category-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--royal-blue);
+  margin: 2rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #e9ecef;
+}
+
+.contact-section {
+  background: linear-gradient(135deg, var(--royal-blue), var(--royal-blue-light));
+  color: white;
+}
+
+.btn-primary {
+  background-color: var(--royal-blue);
+  border-color: var(--royal-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--royal-blue-light);
+  border-color: var(--royal-blue-light);
+}
+
+.transform-on-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
