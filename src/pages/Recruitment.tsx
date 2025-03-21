@@ -24,8 +24,8 @@ const Recruitment = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   
   const carouselImages: CarouselImage[] = [
-    { src: 'src/assets/pledges/rushiesSP25.jpg', title: 'Spring 2025 Pledge Class' },
-    { src: 'src/assets/pledges/rushiesFA24.png', title: 'Fall 2024 Pledge Class' }
+    { src: '/src/assets/pledges/rushiesSP25.jpg', title: 'Spring 2025 Pledge Class' },
+    { src: '/src/assets/pledges/rushiesFA24.png', title: 'Fall 2024 Pledge Class' }
   ];
 
   useEffect(() => {

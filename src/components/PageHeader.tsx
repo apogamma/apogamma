@@ -2,7 +2,6 @@ import { ArrowLeft, Menu } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import '../styles/pageheader.css';
 
-// Define prop types for the component
 interface PageHeaderProps {
   title: string;
   subtitle?: string;

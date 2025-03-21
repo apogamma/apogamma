@@ -19,7 +19,7 @@ export interface BoardMember {
           name: 'Zoe Cantor',
           position: 'President',
           email: 'president@apogamma.org',
-          imageUrl: 'src/assets/boardmembers/ZoeCantor.png'
+          imageUrl: '/src/assets/boardmembers/ZoeCantor.png'
         }
       ]
     },
@@ -100,7 +100,7 @@ export interface BoardMember {
           name: 'Sabrina Sheridan',
           position: 'VP Membership',
           email: 'membership@apogamma.org',
-          imageUrl: 'src/assets/boardmembers/SabrinaSheridan.png'
+          imageUrl: '/src/assets/boardmembers/SabrinaSheridan.png'
         },
         {
           name: 'Samantha Frangione',
@@ -118,7 +118,7 @@ export interface BoardMember {
           name: 'Marie Cajoux',
           position: 'Diversity & Inclusion Chair',
           email: 'diversity@apogamma.org',
-          imageUrl: 'src/assets/boardmembers/MarieCajoux.png'
+          imageUrl: '/src/assets/boardmembers/MarieCajoux.png'
         },
         {
           name: 'Emma Dalla Costa',
@@ -130,7 +130,7 @@ export interface BoardMember {
           name: 'James Estas',
           position: 'Retention Chair',
           email: 'retention@apogamma.org',
-          imageUrl: 'src/assets/boardmembers/JamesEstes.png'
+          imageUrl: '/src/assets/boardmembers/JamesEstes.png'
         }
       ]
     },
@@ -170,7 +170,7 @@ export interface BoardMember {
           name: 'Kira Pawletko',
           position: 'VP Service',
           email: 'service@apogamma.org',
-          imageUrl: 'src/assets/boardmembers/KiraPawletko.png'
+          imageUrl: '/src/assets/boardmembers/KiraPawletko.png'
         },
         {
           name: 'Kevin Kim',
@@ -200,7 +200,7 @@ export interface BoardMember {
           name: 'Sarah McMurry',
           position: 'Philanthropy Chair',
           email: 'philanthropy@apogamma.org',
-          imageUrl: 'src/assets/boardmembers/SarahMcMurry.png'
+          imageUrl: '/src/assets/boardmembers/SarahMcMurry.png'
         },
         {
           name: 'Sara Maslak',
