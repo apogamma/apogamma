@@ -19,7 +19,6 @@ const Recruitment = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
   
-  // Get the pledge team members from boardCategories
   const pledgeTeamCategory = boardCategories.find(category => category.title === "Pledge Team");
   const pledgeTeamMembers = pledgeTeamCategory ? pledgeTeamCategory.members : [];
   
@@ -29,8 +28,9 @@ const Recruitment = () => {
   ];
 
   useEffect(() => {
-    if (window.location.hash !== '#top') {
-      window.location.hash = 'top';
+    if (!window.location.hash) {
+      const newUrl = window.location.pathname + '#top';
+      window.history.replaceState(null, '', newUrl);
     }
     window.scrollTo(0, 0);
   }, []);

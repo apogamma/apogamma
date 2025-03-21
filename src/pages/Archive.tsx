@@ -46,8 +46,9 @@ const Archive = () => {
   const [activeTab, setActiveTab] = useState<TabType>('history');
 
   useEffect(() => {
-    if (window.location.hash !== '#top') {
-      window.location.hash = 'top';
+    if (!window.location.hash) {
+      const newUrl = window.location.pathname + '#top';
+      window.history.replaceState(null, '', newUrl);
     }
     window.scrollTo(0, 0);
   }, []);

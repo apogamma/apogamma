@@ -40,8 +40,9 @@ const HumansOfApo = () => {
   const { brothers = [] } = humansOfApoData as { brothers: Profile[] };
 
   useEffect(() => {
-    if (window.location.hash !== '#top') {
-      window.location.hash = 'top';
+    if (!window.location.hash) {
+      const newUrl = window.location.pathname + '#top';
+      window.history.replaceState(null, '', newUrl);
     }
     window.scrollTo(0, 0);
   }, []);
@@ -284,7 +285,6 @@ const HumansOfApo = () => {
         
         <div className="text-center mt-5 mb-5">
           <p>Looking for our alumni network?</p>
-          {/* Replace anchor tag with React Router's Link component */}
           <Link to="/alumni" className="alumni-link">
             Visit Alumni Page
           </Link>

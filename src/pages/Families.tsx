@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown, ChevronUp, Users, User } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMenu from '../components/SidebarMenu';
 import PageHeader from '../components/PageHeader';
@@ -13,8 +13,9 @@ const FamiliesPage = () => {
   const [expandedFamily, setExpandedFamily] = useState<string | null>(null);
 
   useEffect(() => {
-    if (window.location.hash !== '#top') {
-      window.location.hash = 'top';
+    if (!window.location.hash) {
+      const newUrl = window.location.pathname + '#top';
+      window.history.replaceState(null, '', newUrl);
     }
     window.scrollTo(0, 0);
   }, []);
@@ -117,7 +118,6 @@ const FamiliesPage = () => {
           <p className="mb-4">
             Interested in becoming part of one of our amazing APO families? Learn more about our recruitment process!
           </p>
-          {/* Replace anchor tag with React Router's Link component */}
           <Link to="/recruitment" className="btn btn-light px-4 py-2 fw-bold">
             Learn About Recruitment
           </Link>
