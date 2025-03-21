@@ -4,7 +4,7 @@ import PageHeader from '../components/PageHeader';
 import SidebarMenu from '../components/SidebarMenu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../components/Footer';
-import '../styles/Recruitment.css';
+import '../styles/recruitment.css';
 
 interface CarouselImage {
   src: string;

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Award, Users, GraduationCap, BookOpen, PersonStanding, Instagram, Facebook, Linkedin, Clock } from 'lucide-react';
 import logo from '../assets/logo.png';
-import '../styles/Footer.css';
+import '../styles/footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

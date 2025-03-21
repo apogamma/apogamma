@@ -15,7 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import background from "../assets/background.jpg";
 import SidebarMenu from "../components/SidebarMenu";
 import Footer from "../components/Footer";
-import "../styles/HomePage.css";
+import "../styles/homepage.css";
 
 interface Statistic {
   value: number;
