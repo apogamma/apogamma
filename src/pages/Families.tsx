@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown, ChevronUp, Users, User } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMenu from '../components/SidebarMenu';
 import PageHeader from '../components/PageHeader';
@@ -116,9 +117,10 @@ const FamiliesPage = () => {
           <p className="mb-4">
             Interested in becoming part of one of our amazing APO families? Learn more about our recruitment process!
           </p>
-          <a href="/recruitment" className="btn btn-light px-4 py-2 fw-bold">
+          {/* Replace anchor tag with React Router's Link component */}
+          <Link to="/recruitment" className="btn btn-light px-4 py-2 fw-bold">
             Learn About Recruitment
-          </a>
+          </Link>
         </div>
       </div>
 
