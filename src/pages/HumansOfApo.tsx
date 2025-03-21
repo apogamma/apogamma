@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ChevronDown, ChevronUp, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMenu from '../components/SidebarMenu';
 import PageHeader from '../components/PageHeader';
@@ -283,9 +284,10 @@ const HumansOfApo = () => {
         
         <div className="text-center mt-5 mb-5">
           <p>Looking for our alumni network?</p>
-          <a href="/alumni" className="alumni-link">
+          {/* Replace anchor tag with React Router's Link component */}
+          <Link to="/alumni" className="alumni-link">
             Visit Alumni Page
-          </a>
+          </Link>
         </div>
       </div>
 
