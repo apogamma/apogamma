@@ -40,13 +40,13 @@ export const boardCategories: BoardCategory[] = [
       {
         name: 'Ella Adams',
         position: 'VP Comm',
-        email: 'comm@apogamma.org',
+        email: 'vpcomm@apogamma.org',
         imageUrl: createPlaceholder('EA')
       },
       {
         name: 'Kaitlyn Lim',
         position: 'Public Relations Chair',
-        email: 'pr@apogamma.org',
+        email: 'publicrelations@apogamma.org',
         imageUrl: createPlaceholder('KL')
       },
       {
@@ -76,13 +76,13 @@ export const boardCategories: BoardCategory[] = [
       {
         name: 'Madison Rosario',
         position: 'VP Fellowship',
-        email: 'fellowship@apogamma.org',
+        email: 'vpfellowship@apogamma.org',
         imageUrl: createPlaceholder('MR')
       },
       {
         name: 'Eli Barrett',
         position: 'Fellowship Assistant',
-        email: 'fellowshipassistant@apogamma.org',
+        email: 'vpfellowship@apogamma.org',
         imageUrl: createPlaceholder('EB')
       }
     ]
@@ -110,31 +110,31 @@ export const boardCategories: BoardCategory[] = [
       {
         name: 'Sabrina Sheridan',
         position: 'VP Membership',
-        email: 'membership@apogamma.org',
+        email: 'vpmembership@apogamma.org',
         imageUrl: SabrinaSheridanPath
       },
       {
         name: 'Samantha Frangione',
         position: 'Administrative & Outreach Membership Assistant',
-        email: 'membershipadmin@apogamma.org',
+        email: 'aoma@apogamma.org',
         imageUrl: createPlaceholder('SF')
       },
       {
         name: 'Matthew Rosenstein',
         position: 'Leadership Development Membership Assistant',
-        email: 'membershipleadership@apogamma.org',
+        email: 'ldma@apogamma.org',
         imageUrl: createPlaceholder('MR')
       },
       {
         name: 'Marie Cajoux',
         position: 'Diversity & Inclusion Chair',
-        email: 'diversity@apogamma.org',
+        email: 'diversityandinclusion@apogamma.org',
         imageUrl: MarieCajouxPath
       },
       {
         name: 'Emma Dalla Costa',
         position: 'Diversity & Inclusion Assistant',
-        email: 'diversityassistant@apogamma.org',
+        email: 'diversityandinclusion@apogamma.org',
         imageUrl: createPlaceholder('EDC')
       },
       {
@@ -157,19 +157,19 @@ export const boardCategories: BoardCategory[] = [
       {
         name: 'Nichole Zhou',
         position: 'Co-Assistant Pledgemaster: Big/Little',
-        email: 'apm-biglittle@apogamma.org',
+        email: 'pledgeteam@apogamma.org',
         imageUrl: createPlaceholder('NZ')
       },
       {
         name: 'Jinyu Xu',
         position: 'Co-Assistant Pledgemaster: Administrative',
-        email: 'apm-admin@apogamma.org',
+        email: 'pledgeteam@apogamma.org',
         imageUrl: createPlaceholder('JX')
       },
       {
         name: 'Jeffrey Jiang',
         position: 'Co-Assistant Pledgemaster: PPG',
-        email: 'apm-ppg@apogamma.org',
+        email: 'pledgeteam@apogamma.org',
         imageUrl: createPlaceholder('JJ')
       }
     ]
@@ -180,31 +180,31 @@ export const boardCategories: BoardCategory[] = [
       {
         name: 'Kira Pawletko',
         position: 'VP Service',
-        email: 'service@apogamma.org',
+        email: 'vpservice@apogamma.org',
         imageUrl: KiraPawletkoPath
       },
       {
         name: 'Kevin Kim',
         position: 'Service Learning Chair',
-        email: 'servicelearning@apogamma.org',
+        email: 'servicelearningchair@apogamma.org',
         imageUrl: createPlaceholder('KK')
       },
       {
         name: 'Yan Yu',
         position: 'On-Campus Service Assistant',
-        email: 'oncampusservice@apogamma.org',
+        email: 'vpservice@apogamma.org',
         imageUrl: createPlaceholder('YY')
       },
       {
         name: 'Benny Sun',
         position: 'Off-Campus Service Assistant',
-        email: 'offcampusservice@apogamma.org',
+        email: 'vpservice@apogamma.org',
         imageUrl: createPlaceholder('BS')
       },
       {
         name: 'Allie Pequeno',
         position: 'Service Assistant Administrative',
-        email: 'serviceadmin@apogamma.org',
+        email: 'vpservice@apogamma.org',
         imageUrl: createPlaceholder('AP')
       },
       {
@@ -216,7 +216,7 @@ export const boardCategories: BoardCategory[] = [
       {
         name: 'Sara Maslak',
         position: 'Philanthropy Assistant',
-        email: 'philanthropyassistant@apogamma.org',
+        email: 'philanthropy@apogamma.org',
         imageUrl: createPlaceholder('SM')
       }
     ]

@@ -521,7 +521,7 @@ const HomePage = () => {
                 href="mailto:pledgeteam@apogamma.org" 
                 className="btn btn-light btn-lg px-5 fw-bold letter-spacing transform-on-hover"
               >
-                Apply Now
+                Contact Now
               </a>
             </div>
           </div>
