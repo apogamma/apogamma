@@ -5,27 +5,23 @@ import SidebarMenu from '../components/SidebarMenu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from '../components/Footer';
 import '../styles/recruitment.css';
+import { boardCategories } from '../data/boardMembers';
 
 const SP25Image = new URL('../assets/pledges/rushiesSP25.jpg', import.meta.url).href;
 const FA24Image = new URL('../assets/pledges/rushiesFA24.png', import.meta.url).href;
-
 
 interface CarouselImage {
   src: string;
   title: string;
 }
 
-interface PledgeTeamMember {
-  name: string;
-  position: string;
-  email: string;
-  imageUrl: string;
-  bio?: string;
-}
-
 const Recruitment = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+  
+  // Get the pledge team members from boardCategories
+  const pledgeTeamCategory = boardCategories.find(category => category.title === "Pledge Team");
+  const pledgeTeamMembers = pledgeTeamCategory ? pledgeTeamCategory.members : [];
   
   const carouselImages: CarouselImage[] = [
     { src: SP25Image, title: 'Spring 2025 Pledge Class' },
@@ -64,33 +60,6 @@ const Recruitment = () => {
       prevIndex === carouselImages.length - 1 ? 0 : prevIndex + 1
     );
   };
-
-  const pledgeTeamMembers: PledgeTeamMember[] = [
-    {
-      name: 'Zia Quinn',
-      position: 'Director of Pledging',
-      email: 'pledgemaster@apogamma.org',
-      imageUrl: 'https://placehold.co/300x375/e6f2ff/0056b3?text=ZQ'
-    },
-    {
-      name: 'Nichole Zhou',
-      position: 'Co-Assistant Pledgemaster: Big/Little',
-      email: 'apm-biglittle@apogamma.org',
-      imageUrl: 'https://placehold.co/300x375/e6f2ff/0056b3?text=NZ'
-    },
-    {
-      name: 'Jinyu Xu',
-      position: 'Co-Assistant Pledgemaster: Administrative',
-      email: 'apm-admin@apogamma.org',
-      imageUrl: 'https://placehold.co/300x375/e6f2ff/0056b3?text=JX'
-    },
-    {
-      name: 'Jeffrey Jiang',
-      position: 'Co-Assistant Pledgemaster: PPG',
-      email: 'apm-ppg@apogamma.org',
-      imageUrl: 'https://placehold.co/300x375/e6f2ff/0056b3?text=JJ'
-    }
-  ];
 
   return (
     <div className="overflow-hidden" id="top">
