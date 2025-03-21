@@ -23,6 +23,7 @@ interface OpenFaqs {
 const PledgePage = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [openFaqs, setOpenFaqs] = useState<OpenFaqs>({});
+  const [showFullContent, setShowFullContent] = useState<boolean>(false);
 
   useEffect(() => {
     if (!window.location.hash) {
@@ -30,7 +31,18 @@ const PledgePage = () => {
       window.history.replaceState(null, '', newUrl);
     }
     window.scrollTo(0, 0);
+    
+    checkIfFallSemester();
   }, []);
+
+  const checkIfFallSemester = () => {
+    const currentDate = new Date();
+    const fallSemesterStart = new Date(2025, 7, 20); 
+    
+    if (currentDate >= fallSemesterStart) {
+      setShowFullContent(true);
+    }
+  };
 
   const toggleMenu = (): void => {
     setMenuOpen(!menuOpen);
@@ -118,102 +130,117 @@ const PledgePage = () => {
       />
 
       <div className="container pb-5">
-        <div className="pledge-intro">
-          <p>
-            Welcome to the Alpha Phi Omega Gamma Chapter's pledge program! Here you'll find all the information 
-            you need to successfully complete your pledging semester and become a brother.
-          </p>
-        </div>
+        {showFullContent ? (
+          // Full content for Fall 2025
+          <>
+            <div className="pledge-intro">
+              <p>
+                Welcome to the Alpha Phi Omega Gamma Chapter's pledge program! Here you'll find all the information 
+                you need to successfully complete your pledging semester and become a brother.
+              </p>
+            </div>
 
-        <div className="text-center mb-5">
-          <h2 className="category-title">Pledging Manuals</h2>
-          <div className="d-flex justify-content-center flex-wrap">
-            <a href="https://www.apogamma.org/wp-content/uploads/2017/01/National-Pledge-Manual.pdf" className="manual-link mb-3">
-              <File size={20} className="me-2" />
-              National Pledge Manual
-            </a>
-            <a href="https://docs.google.com/document/d/1wntWcFAbBqa-ewq4_wVZSgscMqBSDAxrXoYEzPF5Sbk/edit#heading=h.6yvuhtk5oj6k" className="manual-link mb-3">
-              <File size={20} className="me-2" />
-              Spring 2025 Pledge Manual
-            </a>
-          </div>
-        </div>
 
-        <div className="mb-5">
-          <h2 className="category-title">Spring 2025 Requirements</h2>
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="requirements-card p-4">
-                <p className="text-center mb-4">
-                  In order to be successfully initiated, you must earn/attend the following:
-                </p>
-                {pledgeRequirements.map((req, index) => (
-                  <div key={index} className="req-item">
-                    <span className="req-name">{req.name}:</span>
-                    <span className="req-value">{req.value}</span>
+
+            <div className="mb-5">
+              <h2 className="category-title">Fall 2025 Requirements</h2>
+              <div className="row justify-content-center">
+                <div className="col-lg-8">
+                  <div className="requirements-card p-4">
+                    <p className="text-center mb-4">
+                      In order to be successfully initiated, you must earn/attend the following:
+                    </p>
+                    {pledgeRequirements.map((req, index) => (
+                      <div key={index} className="req-item">
+                        <span className="req-name">{req.name}:</span>
+                        <span className="req-value">{req.value}</span>
+                      </div>
+                    ))}
+                    <p className="text-center mt-4">
+                      If you have any questions, please email the Director of Pledging at <a href="mailto:pledgemaster@apogamma.org">pledgemaster@apogamma.org</a>.
+                    </p>
                   </div>
-                ))}
-                <p className="text-center mt-4">
-                  If you have any questions, please email the Director of Pledging at <a href="mailto:pledgemaster@apogamma.org">pledgemaster@apogamma.org</a>.
-                </p>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div className="helpful-links">
-          <h3 className="text-center">Helpful Links</h3>
-          <ul className="helpful-links-list text-center">
-            <li>
-              <a href="https://www.apoonline.org/gamma/" target="_blank" rel="noopener noreferrer">
-                <File size={18} className="me-2" />
-                Docubro
-              </a>
-            </li>
-          </ul>
-        </div>
+            <div className="helpful-links">
+              <h3 className="text-center">Helpful Links</h3>
+              <ul className="helpful-links-list text-center">
+                <li>
+                  <a href="https://www.apoonline.org/gamma/" target="_blank" rel="noopener noreferrer">
+                    <File size={18} className="me-2" />
+                    Docubro
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-        <div className="mb-5">
-          <h2 className="category-title">Frequently Asked Questions</h2>
-          <div className="row">
-            <div className="col-lg-10 offset-lg-1">
-              {pledgeFaqs.map((faq, index) => {
-                const isOpen = openFaqs[index];
-                
-                return (
-                  <div key={index} className="faq-item">
-                    <div 
-                      className="faq-question"
-                      onClick={() => toggleFaq(index)}
-                    >
-                      <span>{faq.question}</span>
-                      {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-                    </div>
+            <div className="mb-5">
+              <h2 className="category-title">Frequently Asked Questions</h2>
+              <div className="row">
+                <div className="col-lg-10 offset-lg-1">
+                  {pledgeFaqs.map((faq, index) => {
+                    const isOpen = openFaqs[index];
                     
-                    {isOpen && (
-                      <div className="faq-answer">
-                        {faq.answer}
+                    return (
+                      <div key={index} className="faq-item">
+                        <div 
+                          className="faq-question"
+                          onClick={() => toggleFaq(index)}
+                        >
+                          <span>{faq.question}</span>
+                          {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+                        </div>
+                        
+                        {isOpen && (
+                          <div className="faq-answer">
+                            {faq.answer}
+                          </div>
+                        )}
                       </div>
-                    )}
-                  </div>
-                );
-              })}
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </>
+        ) : (
+          // Coming soon message
+          <div className="coming-soon-container">
+            <div className="pledge-intro">
+              <p>
+                Welcome to the Alpha Phi Omega Gamma Chapter's pledge program!
+              </p>
+            </div>
+            <div className="coming-soon-banner">
+              <h3>FALL 2025 COMING SOON</h3>
+            </div>
+            <div className="contact-info text-center mt-5">
+              <p>
+                For inquiries about pledging, please contact our Pledgemaster:
+              </p>
+              <a href="mailto:pledgemaster@apogamma.org" className="btn btn-primary px-4 py-2 fw-bold">
+                <Mail className="me-2" size={18} /> Contact Pledgemaster
+              </a>
             </div>
           </div>
-        </div>
+        )}
       </div>
 
-      <div className="contact-section py-5">
-        <div className="container text-center">
-          <h2 className="fw-bold mb-4">Still Have Questions?</h2>
-          <p className="mb-4">
-            Can't find the information you're looking for? Reach out to our Pledgemaster for assistance!
-          </p>
-          <a href="mailto:pledgemaster@apogamma.org" className="btn btn-light px-4 py-2 fw-bold">
-            <Mail className="me-2" size={18} /> Contact Pledgemaster
-          </a>
+      {showFullContent && (
+        <div className="contact-section py-5">
+          <div className="container text-center">
+            <h2 className="fw-bold mb-4">Still Have Questions?</h2>
+            <p className="mb-4">
+              Can't find the information you're looking for? Reach out to our Pledgemaster for assistance!
+            </p>
+            <a href="mailto:pledgemaster@apogamma.org" className="btn btn-light px-4 py-2 fw-bold">
+              <Mail className="me-2" size={18} /> Contact Pledgemaster
+            </a>
+          </div>
         </div>
-      </div>
+      )}
       
       <Footer />
     </div>

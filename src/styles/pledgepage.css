@@ -107,23 +107,31 @@ body {
   color: var(--royal-blue);
 }
 
-.manual-link {
-  display: inline-flex;
+.coming-soon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: var(--royal-blue);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin: 0 1rem;
+  min-height: 50vh;
 }
 
-.manual-link:hover {
-  background-color: var(--royal-blue-light);
-  text-decoration: none;
+.coming-soon-banner {
+  background-color: var(--royal-blue);
   color: white;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  width: 100%;
+}
+
+.coming-soon-banner h3 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
 .contact-section {

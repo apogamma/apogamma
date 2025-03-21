@@ -84,7 +84,7 @@ const Recruitment = () => {
           </p>
           <p>
             We welcome ALL who wish to serve to join our organization! We DO NOT haze. In order to successfully rush, 
-            you must attend <strong>1 Information Session, 1 Leadership workshop, 1 Fellowship event, 2 Service events</strong>, 
+            you must attend <strong>1 Information Session, 1 Leadership workshop OR 1 Fellowship event, 2 Service events</strong>, 
             and <strong>submit a Letter of Intent</strong>.
           </p>
         </div>
