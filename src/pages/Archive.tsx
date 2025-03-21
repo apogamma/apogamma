@@ -93,10 +93,9 @@ const Archive = () => {
   ];
 
   const pastLeadership: PastLeader[] = [
-    { year: "2023-2024", president: "Alex Johnson", vp: "Taylor Williams" },
-    { year: "2022-2023", president: "Morgan Chen", vp: "Jordan Smith" },
-    { year: "2021-2022", president: "Casey Brown", vp: "Riley Garcia" },
-    { year: "2020-2021", president: "Jamie Taylor", vp: "Avery Martinez" }
+    { year: "2025-2026", president: "Zoe Cantor", vp: "Sabrina Sheridan" },
+    { year: "2023-2024", president: "Calista Bordador", vp: "Zoe Cantor" },
+    { year: "2022-2023", president: "Kieran Adams", vp: "Calista Bordador" }
   ];
 
   const gammaSymbols: GammaSymbol[] = [

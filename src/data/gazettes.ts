@@ -8,8 +8,16 @@ export interface GazetteIssue {
   coverImage?: string;
 }
 
-// Array of Gamma Gazette issues, sorted by date (newest first)
 export const gammaGazettes: GazetteIssue[] = [
+  {
+    id: 'spring-2023',
+    title: 'Spring 2023 Gamma Gazette',
+    period: 'Spring 2023',
+    year: 2023,
+    semester: 'Spring',
+    url: 'https://drive.google.com/file/d/12QaKcqojQkKzabJtcnT3ZKu9nUdaxzDg/view?usp=sharing',
+    coverImage: '/api/placeholder/300/400'
+  },
   {
     id: 'fall-2022',
     title: 'Fall 2022 Gamma Gazette',
