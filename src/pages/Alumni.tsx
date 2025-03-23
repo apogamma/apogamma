@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { ChevronDown, ChevronUp, Instagram, MapPin, FileText } from 'lucide-react';
+import { MapPin, FileText } from 'lucide-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMenu from '../components/SidebarMenu';
 import PageHeader from '../components/PageHeader';
 import humansOfApoData from '../data/humansOfApo';
+import ProfileCard from '../components/ProfileCard';
 import Footer from '../components/Footer';
 import '../styles/alumni.css';
 
@@ -11,6 +12,7 @@ interface Member {
   name: string;
   gradYear: string;
   instagram?: string;
+  position?: string;
 }
 
 interface AlumniProfile {
@@ -89,66 +91,12 @@ const Alumni = () => {
       
       return (
         <div key={profileId} className="col-lg-6 mb-4">
-          <div className="profile-card">
-            <div 
-              className="profile-header"
-              onClick={() => toggleProfile(profileId)}
-            >
-              <div className="d-flex justify-content-between align-items-center">
-                <h3>{profile.name}</h3>
-                {isExpanded ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-              </div>
-              <div className="profile-meta">
-                <span>Class of {profile.gradYear}</span>
-                {profile.position && <span>{profile.position}</span>}
-                {profile.isGroup && <span>Group</span>}
-              </div>
-            </div>
-            
-            {isExpanded && (
-              <>
-                <img 
-                  src={profile.imageUrl.startsWith('https://drive.google.com/open?id=') 
-                    ? profile.imageUrl.replace('https://drive.google.com/open?id=', 'https://drive.google.com/uc?id=')
-                    : profile.imageUrl} 
-                  alt={profile.name} 
-                  className="profile-image" 
-                />
-                
-                <div className="profile-content">
-                  <p>{profile.bio}</p>
-                  
-                  {profile.isGroup && profile.members && profile.members.length > 0 && (
-                    <div className="members-section">
-                      <h5>Group Members:</h5>
-                      {profile.members.map((member, memberIndex) => (
-                        <div key={memberIndex} className="member-item">
-                          <span>{member.name} (Class of {member.gradYear})</span>
-                          {member.instagram && (
-                            <a 
-                              href={`https://instagram.com/${member.instagram.replace('@', '')}`} 
-                              target="_blank" 
-                              rel="noopener noreferrer"
-                              className="instagram"
-                            >
-                              <Instagram size={16} />
-                              {member.instagram}
-                            </a>
-                          )}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-                
-                {profile.spotlight && profile.spotlight !== 'N/A' && (
-                  <div className="profile-spotlight">
-                    <strong>Spotlight Nomination:</strong> {profile.spotlight}
-                  </div>
-                )}
-              </>
-            )}
-          </div>
+          <ProfileCard 
+            profile={profile}
+            isExpanded={isExpanded}
+            toggleProfile={() => toggleProfile(profileId)}
+            index={index}
+          />
         </div>
       );
     });
