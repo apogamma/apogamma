@@ -26,12 +26,6 @@ const PledgePage = () => {
   const [showFullContent, setShowFullContent] = useState<boolean>(false);
 
   useEffect(() => {
-    if (!window.location.hash) {
-      const newUrl = window.location.pathname + '#top';
-      window.history.replaceState(null, '', newUrl);
-    }
-    window.scrollTo(0, 0);
-    
     checkIfFallSemester();
   }, []);
 

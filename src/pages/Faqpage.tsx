@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ChevronDown, ChevronUp, Mail } from 'lucide-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMenu from '../components/SidebarMenu';
@@ -14,14 +14,6 @@ interface OpenFaqsState {
 const FaqPage = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [openFaqs, setOpenFaqs] = useState<OpenFaqsState>({});
-
-  useEffect(() => {
-    if (!window.location.hash) {
-      const newUrl = window.location.pathname + '#top';
-      window.history.replaceState(null, '', newUrl);
-    }
-    window.scrollTo(0, 0);
-  }, []);
 
   const toggleMenu = (): void => {
     setMenuOpen(!menuOpen);

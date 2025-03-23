@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Instagram, MapPin, FileText } from 'lucide-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMenu from '../components/SidebarMenu';
@@ -34,14 +34,6 @@ const Alumni = () => {
   const [expandedProfiles, setExpandedProfiles] = useState<ExpandedProfiles>({});
 
   const { alumni = [] } = humansOfApoData as { alumni: AlumniProfile[] };
-
-  useEffect(() => {
-    if (!window.location.hash) {
-      const newUrl = window.location.pathname + '#top';
-      window.history.replaceState(null, '', newUrl);
-    }
-    window.scrollTo(0, 0);
-  }, []);
 
   const toggleMenu = (): void => {
     setMenuOpen(!menuOpen);

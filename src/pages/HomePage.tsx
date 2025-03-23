@@ -65,13 +65,6 @@ const HomePage = () => {
   const [inView, setInView] = useState<boolean>(false);
   const [countedStats, setCountedStats] = useState<number[]>(statistics.map(() => 0));
 
-  useEffect(() => {
-    if (!window.location.hash) {
-      const newUrl = window.location.pathname + '#top';
-      window.history.replaceState(null, '', newUrl);
-    }
-    window.scrollTo(0, 0);
-  }, []);
   const toggleMenu = (): void => {
     setMenuOpen(!menuOpen);
   };
@@ -286,7 +279,7 @@ const HomePage = () => {
           </Link>
         ) : title === "Service" ? (
           <Link
-            to="/humansofapo"
+            to="/service"
             className="btn btn-primary px-4 py-2 fw-bold letter-spacing"
           >
             {buttonText}

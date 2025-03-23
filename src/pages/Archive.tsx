@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { History, Camera, Users, FileBadge, BookOpen, Star, Newspaper } from 'lucide-react';
 import PageHeader from '../components/PageHeader';
 import SidebarMenu from '../components/SidebarMenu';
@@ -44,14 +44,6 @@ type TabType = 'history' | 'symbols' | 'composites' | 'leadership' | 'gazettes' 
 const Archive = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<TabType>('history');
-
-  useEffect(() => {
-    if (!window.location.hash) {
-      const newUrl = window.location.pathname + '#top';
-      window.history.replaceState(null, '', newUrl);
-    }
-    window.scrollTo(0, 0);
-  }, []);
 
   const toggleMenu = (): void => {
     setMenuOpen(!menuOpen);

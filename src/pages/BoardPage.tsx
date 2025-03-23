@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Mail } from 'lucide-react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { boardCategories } from '../data/boardMembers';
@@ -22,14 +22,6 @@ interface BoardCategory {
 
 const BoardPage = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-
-  useEffect(() => {
-    if (!window.location.hash) {
-      const newUrl = window.location.pathname + '#top';
-      window.history.replaceState(null, '', newUrl);
-    }
-    window.scrollTo(0, 0);
-  }, []);
 
   const toggleMenu = (): void => {
     setMenuOpen(!menuOpen);

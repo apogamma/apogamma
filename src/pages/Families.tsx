@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { ChevronDown, ChevronUp, Users, User } from 'lucide-react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SidebarMenu from '../components/SidebarMenu';
 import PageHeader from '../components/PageHeader';
@@ -11,14 +11,6 @@ import '../styles/families.css';
 const FamiliesPage = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const [expandedFamily, setExpandedFamily] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!window.location.hash) {
-      const newUrl = window.location.pathname + '#top';
-      window.history.replaceState(null, '', newUrl);
-    }
-    window.scrollTo(0, 0);
-  }, []);
 
   const toggleMenu = (): void => {
     setMenuOpen(!menuOpen);

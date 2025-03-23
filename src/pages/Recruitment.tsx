@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import '../styles/recruitment.css';
 import { boardCategories } from '../data/boardMembers';
 
+const SP24Image = new URL('../assets/pledges/rushiesSP24.png', import.meta.url).href;
 const SP25Image = new URL('../assets/pledges/rushiesSP25.jpg', import.meta.url).href;
 const FA24Image = new URL('../assets/pledges/rushiesFA24.png', import.meta.url).href;
 
@@ -24,16 +25,9 @@ const Recruitment = () => {
   
   const carouselImages: CarouselImage[] = [
     { src: SP25Image, title: 'Spring 2025 Pledge Class' },
-    { src: FA24Image, title: 'Fall 2024 Pledge Class' }
+    { src: FA24Image, title: 'Fall 2024 Pledge Class' },
+    { src: SP24Image, title: 'Spring 2024 Pledge Class' }
   ];
-
-  useEffect(() => {
-    if (!window.location.hash) {
-      const newUrl = window.location.pathname + '#top';
-      window.history.replaceState(null, '', newUrl);
-    }
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
