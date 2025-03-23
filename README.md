@@ -36,9 +36,6 @@ This is the official website repository for Alpha Phi Omega's Gamma Chapter at C
 
 ```
 apo-gamma/
-├── public/
-│   ├── images/
-│   └── index.html
 ├── src/
 │   ├── assets/
 │   │   ├── composites/
