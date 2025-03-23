@@ -157,7 +157,7 @@ const brothersData: HumanOfApo[] = [
     name: "Meadow Barr & Leyla Rivera",
     date: "3/23/2025",
     gradYear: "2027",
-    imageUrl: "https://drive.google.com/file/d/15NefyX__43fsdLLlGM3WlDu1vsCTCZVG/view?usp=sharing",
+    imageUrl: "https://drive.google.com/file/d/1aQ5rfYqdjb-MP2Qka6lH9qBt8LtesnVS/view?usp=sharing",
     bio: "We met through a mutual friend! Our favorite memory together is waking up to watch the sunrise and getting Chatty Cathy's! We love going to Prisoner's Express because it is so fun and meaningful to connect with incarcerated people and share our love of journaling with them! Leyla is the pb to Meadow's jelly <333. Outside of APO, we love to go to CTB karaoke, do calc homework on Meadow's floor, or just hang out!",
     spotlight: "",
     isGroup: true,
