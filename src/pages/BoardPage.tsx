@@ -27,6 +27,27 @@ const BoardPage = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // Function to handle Google Drive images
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    const target = e.target as HTMLImageElement;
+    
+    // Check if this is a Google Drive URL
+    if (target.src.includes('drive.google.com/open')) {
+      // Extract the ID from the Google Drive URL
+      const idMatch = target.src.match(/id=([^&]+)/);
+      if (idMatch && idMatch[1]) {
+        // Replace with thumbnail URL
+        target.src = `https://drive.google.com/thumbnail?id=${idMatch[1]}&sz=w1000`;
+      }
+    } else if (target.src.includes('drive.google.com/file/d/')) {
+      // Handle direct file links
+      const idMatch = target.src.match(/d\/([^/]+)/);
+      if (idMatch && idMatch[1]) {
+        target.src = `https://drive.google.com/thumbnail?id=${idMatch[1]}&sz=w1000`;
+      }
+    }
+  };
+
   return (
     <div className="overflow-hidden" id="top">
       <PageHeader 
@@ -63,6 +84,7 @@ const BoardPage = () => {
                         src={member.imageUrl} 
                         alt={`${member.name} - ${member.position}`} 
                         className="member-image"
+                        onError={handleImageError}
                       />
                       {member.bio && (
                         <div className="bio-overlay">

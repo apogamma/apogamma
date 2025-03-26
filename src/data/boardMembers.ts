@@ -1,9 +1,9 @@
-import ZoeCantorPath from '/src/assets/boardmembers/ZoeCantor.png';
 import SabrinaSheridanPath from '/src/assets/boardmembers/SabrinaSheridan.png';
 import MarieCajouxPath from '/src/assets/boardmembers/MarieCajoux.png';
-import JamesEstesPath from '/src/assets/boardmembers/JamesEstes.png';
 import KiraPawletkoPath from '/src/assets/boardmembers/KiraPawletko.png';
 import SarahMcMurryPath from '/src/assets/boardmembers/SarahMcMurry.png';
+import KaitlynLimPath from '/src/assets/boardmembers/KaitlynLim.png';
+import JefferyJiangPath from '/src/assets/boardmembers/JefferyJiang.png';
 
 export interface BoardMember {
   name: string;
@@ -18,6 +18,21 @@ export interface BoardCategory {
   members: BoardMember[];
 }
 
+const convertGoogleDriveUrl = (url: string): string => {
+  if (url.includes('drive.google.com/open')) {
+    const idMatch = url.match(/id=([^&]+)/);
+    if (idMatch && idMatch[1]) {
+      return `https://drive.google.com/thumbnail?id=${idMatch[1]}&sz=w1000`;
+    }
+  } else if (url.includes('drive.google.com/file/d/')) {
+    const idMatch = url.match(/d\/([^/]+)/);
+    if (idMatch && idMatch[1]) {
+      return `https://drive.google.com/thumbnail?id=${idMatch[1]}&sz=w1000`;
+    }
+  }
+  return url;
+};
+
 const createPlaceholder = (initials: string) => {
   return `https://placehold.co/300x375/e6f2ff/0056b3?text=${initials}`;
 };
@@ -30,7 +45,15 @@ export const boardCategories: BoardCategory[] = [
         name: 'Zoe Cantor',
         position: 'President',
         email: 'president@apogamma.org',
-        imageUrl: ZoeCantorPath
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=12DspBiF_Wy8XBJdTeHu59RHyVmYA0WQP'),
+        bio: "Hi, I'm Zoe! I'm a junior studying Industrial and Labor Relations, originally from Bethesda, Maryland. Outside of APO, I am involved in SEGC, Creme de Cornell, and work as an ILR Peer Mentor and at Catherwood Library. I love playing board games, baking, and iced chai!"
+      },
+      {
+        name: 'Erin Boell',
+        position: 'Sergeant at Arms',
+        email: 'ebb84@cornell.edu',
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1B2EnNAMGhpZJCQcNtnq5_IjSfg3ol015'),
+        bio: "Hi, I'm Erin! I am a junior studying Public Policy. I am from Philly, and I love going to concerts, watching rom-coms, and spending time with my friends. I host an earring making service event in APO!"
       }
     ]
   },
@@ -41,26 +64,29 @@ export const boardCategories: BoardCategory[] = [
         name: 'Ella Adams',
         position: 'VP Comm',
         email: 'vpcomm@apogamma.org',
-        imageUrl: createPlaceholder('EA')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=17FQSEHf9REsqHaR3260_aA64WAZGP4cr'),
+        bio: "Hi I'm Ella and I'm a sophomore Biology & Society major in CALS! I'm from San Diego, CA and I love the beach, chill movie nights, sweet treats, coffee, and sunshine. Outside of APO, I play club field hockey at Cornell."
       },
       {
         name: 'Kaitlyn Lim',
         position: 'Public Relations Chair',
         email: 'publicrelations@apogamma.org',
-        imageUrl: createPlaceholder('KL')
+        imageUrl: KaitlynLimPath,
+        bio: "Hi my name is Kaitlyn Lim, and I'm the Director of Public Relations this year! I'm from Cupertino, CA and I'm currently a junior in ILR ^^ Outside of APO I am also involved in Project Hope and CSA! I really like traveling and listening to music 🫶 Feel free to reach out if you have any questions about APO ^^"
       },
       {
         name: 'Amanda Strocko',
         position: 'Historian',
         email: 'historian@apogamma.org',
-        imageUrl: createPlaceholder('AS')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1tbOZBtPTN5aUQxrcyIMarAVxqwZJuNUt'),
+        bio: "Hi! I'm Amanda, and I'm from Elysburg, PA. I'm a freshman majoring in Industrial and Labor Relations. My favorite place to eat in Ithaca is the Ithaca Ale House! I love spending time with friends watching movies and hiking."
       },
       {
         name: 'Samantha Cruz',
         position: 'Webmaster',
         email: 'webmaster@apogamma.org',
         imageUrl: createPlaceholder('SC'),
-        bio: 'Hey, I\'m Sam! I\'m a freshman in CAS studying CS. I\'m from South Florida and love volunteering, teaching, making games, playing games, and vibing. Outside of APO, I\'m on Hack4Impact and Circle K!'
+        bio: "Hey, I'm Sam! I'm a freshman in CAS studying CS. I'm from South Florida and love volunteering, teaching, making games, playing games, and vibing. Outside of APO, I'm on Hack4Impact and Circle K!"
       },
       {
         name: 'Leyla Rivera',
@@ -77,7 +103,8 @@ export const boardCategories: BoardCategory[] = [
         name: 'Madison Rosario',
         position: 'VP Fellowship',
         email: 'vpfellowship@apogamma.org',
-        imageUrl: createPlaceholder('MR')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1YA98Dxhyv43uw6CcgGfD1BVl2q5Ib9i9'),
+        bio: "Hi, my name is Madison Rosario, and I am from Richmond, Virginia. I am an animal science major. I love cooking, hiking, and traveling. Outside of APO I am involved in the Western Equestrian Team, the Pre-Vet Society, and Guiding Eyes for the Blind!"
       },
       {
         name: 'Eli Barrett',
@@ -94,7 +121,8 @@ export const boardCategories: BoardCategory[] = [
         name: 'Karina Chakov',
         position: 'Treasurer',
         email: 'treasurer@apogamma.org',
-        imageUrl: createPlaceholder('KC')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1uSOqjt8qPdlVnizTPKEer7ze9oMh61QV'),
+        bio: "Hi, I'm Karina! I'm a Chemical Engineering major from New Jersey, and I like trivia, movies, Legos, snowboarding, board games, pickleball, roller coasters, audiobooks, Mario Kart, and more!"
       },
       {
         name: 'Ivor Mills',
@@ -123,7 +151,8 @@ export const boardCategories: BoardCategory[] = [
         name: 'Matthew Rosenstein',
         position: 'Leadership Development Membership Assistant',
         email: 'ldma@apogamma.org',
-        imageUrl: createPlaceholder('MR')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=17rhNUwcJdhFuWMNSeSs9KSiWF7MBnbuh'),
+        bio: "Hi, I'm Matthew! I am from Bethesda, Maryland and am a sophomore studying Industrial and Labor Relations. My favorite show is Abbott Elementary and my favorite soda is Dr. Pepper. In my free time I enjoy hiking, listening to music, and watching sports!"
       },
       {
         name: 'Marie Cajoux',
@@ -138,10 +167,11 @@ export const boardCategories: BoardCategory[] = [
         imageUrl: createPlaceholder('EDC')
       },
       {
-        name: 'James Estas',
+        name: 'James Estes',
         position: 'Retention Chair',
         email: 'retention@apogamma.org',
-        imageUrl: JamesEstesPath
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1r9fedvhONJ480Rr2sOzAH_YqTa2ePuvw'),
+        bio: "Hi! My name is James Estes and I am a senior from Orange Country, California! My fun facts are that I have a twin brother and I play in a band called \"Crush\" on campus! My major is HBHS and I am pre-medical. I love watching anime and playing volleyball!"
       }
     ]
   },
@@ -152,13 +182,15 @@ export const boardCategories: BoardCategory[] = [
         name: 'Zia Quinn',
         position: 'Director of Pledging',
         email: 'pledgemaster@apogamma.org',
-        imageUrl: createPlaceholder('ZQ')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1VzWFmu4X9pL_xMUsC7eWQkOsmXklrlWJ'),
+        bio: "Hi I'm Zia! I'm a junior studying HBHS from Westwood, MA. I love running and baking."
       },
       {
         name: 'Nichole Zhou',
         position: 'Co-Assistant Pledgemaster: Big/Little',
         email: 'pledgeteam@apogamma.org',
-        imageUrl: createPlaceholder('NZ')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1ztZaJOyccUfvOhptnHz-JzOr5zF3qw1j'),
+        bio: "Hi! I'm Nichole and I'm from a suburb of Chicago. I'm a freshman studying statistics, and some of my favorite things include long walks, Smiskis, dinnertime, Nintendo games, and slope sunsets."
       },
       {
         name: 'Jinyu Xu',
@@ -170,7 +202,8 @@ export const boardCategories: BoardCategory[] = [
         name: 'Jeffrey Jiang',
         position: 'Co-Assistant Pledgemaster: PPG',
         email: 'pledgeteam@apogamma.org',
-        imageUrl: createPlaceholder('JJ')
+        imageUrl: JefferyJiangPath,
+        bio: "Hi! I'm Jeffrey, and I'm a sophomore studying Biological Sciences in CAS. I'm from Las Vegas, NV and love going to the gym, eating at new restaurants, and listening to music. I'm in APO because I have a strong interest in community service! Outside of APO, I'm a part of P3, Project Hope, and a molecular bio research lab."
       }
     ]
   },
@@ -187,13 +220,15 @@ export const boardCategories: BoardCategory[] = [
         name: 'Kevin Kim',
         position: 'Service Learning Chair',
         email: 'servicelearningchair@apogamma.org',
-        imageUrl: createPlaceholder('KK')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1LtM2ZDMLcmHUcRE0ep_yZaLhRVpG2h0S'),
+        bio: "Hi, I'm Kevin. I'm a sophomore in the ILR School. I'm from Seoul, South Korea and love reading, volunteering, and working out. My fun fact is that I get stopped by TSA on every trip..."
       },
       {
         name: 'Yan Yu',
         position: 'On-Campus Service Assistant',
         email: 'vpservice@apogamma.org',
-        imageUrl: createPlaceholder('YY')
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1qArJV3LPfzPBTxHRjzW6136T22RD7xve'),
+        bio: "Hi everyone! I'm a sophomore majoring in HBHS in the College of Human Ecology and I'm from Center Valley, Pennsylvania. In my free time, I love playing tennis, cooking, and hiking."
       },
       {
         name: 'Benny Sun',
@@ -211,7 +246,8 @@ export const boardCategories: BoardCategory[] = [
         name: 'Sarah McMurry',
         position: 'Philanthropy Chair',
         email: 'philanthropy@apogamma.org',
-        imageUrl: SarahMcMurryPath
+        imageUrl: SarahMcMurryPath,
+        bio: "I'm Sarah! I'm a junior in A&S studying Biological Sciences and Spanish. I'm from Marietta, GA, and in my free time I love running, reading, and doing pottery."
       },
       {
         name: 'Sara Maslak',
