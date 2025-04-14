@@ -18,6 +18,9 @@ primary_region = 'ewr'
 
   [[http_service.domains]]
     name = "apogamma.org"
+  
+  [[http_service.domains]]
+    name = "www.apogamma.org"
 
 [[vm]]
   memory = '1gb'
