@@ -23,7 +23,7 @@ This is the official website repository for Alpha Phi Omega's Gamma Chapter at C
 - **Icons**: Lucide React
 - **Routing**: React Router
 - **Version Control**: Git
-- **Deployment**: [Deployment platform]
+- **Deployment**: fly.io
 
 ## Development
 
