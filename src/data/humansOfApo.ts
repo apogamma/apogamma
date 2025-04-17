@@ -176,6 +176,15 @@ const brothersData: HumanOfApo[] = [
       }
     ],
     position: "Brothers" 
+  },
+  {
+    name: "Grace Liu",
+    date: "4/14/2025",
+    gradYear: "2028",
+    imageUrl: "https://drive.google.com/file/d/1BGKT0UGFhnEQ2b6MDUW1j4pPMaQ9_Qyl/view?usp=sharing", 
+    bio: "My favorite memory in APO was the late night cookie baking. I had so much fun decorating cookies and bonding with the brothers! In the future, I hope to pursue a career in healthcare. I'm currently hoping to pursue a career in pediatrics or family medicine. Spending time with friends and family makes me happy! It doesn't matter what we do, but quality time is the best :).",
+    spotlight: "Claire",
+    position: "Brother"
   }
 ];
 

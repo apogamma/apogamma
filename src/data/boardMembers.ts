@@ -145,7 +145,8 @@ export const boardCategories: BoardCategory[] = [
         name: 'Samantha Frangione',
         position: 'Administrative & Outreach Membership Assistant',
         email: 'aoma@apogamma.org',
-        imageUrl: createPlaceholder('SF')
+        imageUrl: "https://drive.google.com/file/d/1vYKN3mThrr5ps2ettLtIXfJey9hwu6lK/view?usp=sharing",
+        bio: "Hi, I'm Sam! I am a sophomore studying Human Development. I'm from New Jersey, and I love movie nights, going to the beach, iced chai, and spending time with my friends!"
       },
       {
         name: 'Matthew Rosenstein',
@@ -196,7 +197,8 @@ export const boardCategories: BoardCategory[] = [
         name: 'Jinyu Xu',
         position: 'Co-Assistant Pledgemaster: Administrative',
         email: 'pledgeteam@apogamma.org',
-        imageUrl: createPlaceholder('JX')
+        imageUrl: "https://drive.google.com/file/d/1-wu0_ft4z_6Ah6rPKe6ixHGVP7TUHIe1/view?usp=sharing",
+        bio: "Hi, I’m Jinyu! I’m a current freshman from Brooklyn, NYC, majoring in Human Development."
       },
       {
         name: 'Jeffrey Jiang',
@@ -240,7 +242,8 @@ export const boardCategories: BoardCategory[] = [
         name: 'Allie Pequeno',
         position: 'Service Assistant Administrative',
         email: 'vpservice@apogamma.org',
-        imageUrl: createPlaceholder('AP')
+        imageUrl: 'https://drive.google.com/file/d/1lNeLNNzzx3kv1jVhcyNClR6EF-dB7O8d/view?usp=sharing',
+        bio: "Hi, I’m Allie! I am a sophomore majoring in Biological Sciences, and I’m from Chandler, Arizona. For fun, I like to travel, go hiking, listen to music, and try new restaurants. Outside of APO, I am in the Biology Scholars Program, Rho Psi Eta, and P3."
       },
       {
         name: 'Sarah McMurry',
