@@ -185,6 +185,34 @@ const brothersData: HumanOfApo[] = [
     bio: "My favorite memory in APO was the late night cookie baking. I had so much fun decorating cookies and bonding with the brothers! In the future, I hope to pursue a career in healthcare. I'm currently hoping to pursue a career in pediatrics or family medicine. Spending time with friends and family makes me happy! It doesn't matter what we do, but quality time is the best :).",
     spotlight: "Claire",
     position: "Brother"
+  },
+  {
+    name: "Julia Fritsch",
+    date: "4/20/2025",
+    gradYear: "2025",
+    imageUrl: "https://drive.google.com/file/d/134tbFioBAEiAAvtxNyMEbu3whWu2Pgnt/view?usp=sharing", 
+    bio: "My favorite memory in APO is probably participating in the Art and Feminism Wikipedia Edit-a-thon! It was my first time using Wikipedia as an editor instead of just a reader and it was really exciting to expand stub articles, cite reliable sources, and add new sections to pages! I might actually make a hobby of it. After I graduate, I will be getting my Master's in Library Science with a concentration in Archives Management. I loved working with the special collections in my classes at Cornell, so I want to help preserve books and letters and photographs (and digitize them to make them as accessible as possible). Outside of classes and APO, I spend a lot of my time reading mostly fantasy and speculative fiction. Everyone should get a library card and download Libby—I've borrowed over 300 ebooks and audiobooks for free. I also love video games and typically play Overwatch (which I have been playing since 2016) at least once a day.",
+    spotlight: "Calista Bordador",
+    position: "Brother"
+  },
+  {
+    name: "Eli Barrett",
+    date: "4/20/2025",
+    gradYear: "2028",
+    imageUrl: "https://drive.google.com/file/d/1sXfs7-ZthQkiNT20w9ta08OqXus3lu0l/view?usp=sharing", 
+    bio: "My favorite memory in APO is probably the first formal. It was the first time I really got to know my big and grand big and now I feel very close with them. APO has allowed me to find fellowship in all sorts of places at Cornell. I have so many connections just because everyone here has a drive to help others. In the future I want to do something with Biology. I really love animals and any career I take would hopefully be centered round them. Biology as a whole is an intriguing and powerful field that I hope to be able to utilize to help the creatures of the Earth someday. I am very passionate about animals, as my answer to what I hope to do in the future shows, but beyond that I love immersing myself in cultures and places very different from my own. This often takes the form of extensive traveling. It always makes me happy to spend times with friends especially when I can make them laugh. Hearing someone else laugh as a result of something I did or said to be funny always makes me happy. I also like spending time in with animals.",
+    spotlight: "N/A",
+    position: "Brother"
+  },
+  {
+    name: "Ivor Mills",
+    date: "4/21/2025",
+    gradYear: "2027",
+    imageUrl: "https://drive.google.com/file/d/1V0QhOZ6IsR-0dSTL5vBz4dmsb3UJiGFO/view?usp=sharing", 
+    bio: "My favorite memory in APO is definitely volunteering for the Sophie Fund in the commons! The event was so much fun and I got to work alongside so many wonderful volunteers for such an amazing cause! APO has helped me to find my volunteerism again, as I feel like when I got to college, I had a lot of trouble finding opportunities to volunteer, which was a big part of my identity in high school! I hope to be a professor of organizational behavior/management at an R1 university! After graduating from undergrad, I will hopefully go on to pursue my PhD in a good business school! I am passionate about volunteerism, research, and academics, as well as hanging out with friends and socializing. I think that these activities are really meaningful to me, and help me in guiding my decisions! This is a hard question to answer, but I think that the friends I have made and being able to hang out with them is what makes me happiest. I think that the opportunity to socialize and hang with friends on campus really lets me destress and improve my own mental health!",
+    spotlight: "Karina Chakov",
+    instagram: "@Ivor0615",
+    position: "Brother"
   }
 ];
 
