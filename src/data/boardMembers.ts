@@ -82,11 +82,11 @@ export const boardCategories: BoardCategory[] = [
         bio: "Hi! I'm Amanda, and I'm from Elysburg, PA. I'm a freshman majoring in Industrial and Labor Relations. My favorite place to eat in Ithaca is the Ithaca Ale House! I love spending time with friends watching movies and hiking."
       },
       {
-        name: 'Samantha Cruz',
+        name: 'Jing Zhang',
         position: 'Webmaster',
         email: 'webmaster@apogamma.org',
-        imageUrl: createPlaceholder('SC'),
-        bio: "Hey, I'm Sam! I'm a freshman in CAS studying CS. I'm from South Florida and love volunteering, teaching, making games, playing games, and vibing. Outside of APO, I'm on Hack4Impact and Circle K!"
+        imageUrl: createPlaceholder('JZ'),
+        bio: "Hey, I'm Jing!"
       },
       {
         name: 'Leyla Rivera',
