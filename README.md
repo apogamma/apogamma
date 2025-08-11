@@ -68,7 +68,7 @@ apo-gamma/
 
 ## Maintenance
 
-This website is actively maintained by the APO Gamma Chapter WebMaster. The site was developing in Spring 2025 by Webmaster Samantha Cruz (sam@cruzcodes.com | [cruzcodes.com](https://cruzcodes.com)).
+This website is actively maintained by the APO Gamma Chapter WebMaster. The site was developing in Spring 2025 by Webmaster Samantha Cruz (sjc365@cornell.edu).
 
 For questions, issues, or feature requests, please contact the current WebMaster or open an issue in this repository.
 
