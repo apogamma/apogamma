@@ -141,7 +141,29 @@ const alumniData: HumanOfApo[] = [
       }
     ],
     position: "Former Fam Heads, Alumni" 
-  }
+  }, 
+  {
+  name: "Calista Bordador & Amber Briscoe",
+  date: "4/24/2025",
+  gradYear: "", 
+  imageUrl: "https://lh3.googleusercontent.com/d/1LiRJYj2dMBeKv7GYQbGE2S3uJ1LBIUWr",
+  bio: "We met in Calculus I in our first fall here at Cornell. I (Calista) was sitting in front of Amber, and we had to work together for our first ever in-class problem set. We found out we were both living in Ganedago and decided to exchange numbers so we could work on problem sets together. Slayyy! Our favorite APO event was attending Spring '23 Formal: 00Service! We both dressed as our favorite characters from Kingsman: The Golden Circle—Amber as Agent Whiskey and Calista as Agent Galahad. On top of sharing common interests (like Marvel and Star Wars), we've supported each other through thick and thin. From the chaos of the Ganedago arsonist to fun times like Slope Day and hockey games, we've grown closer than ever, always making each other laugh when it's needed most.",
+  spotlight: "Kaylee Morales, Jason Xiong",
+  isGroup: true,
+  members: [
+    {
+      name: "Calista Bordador",
+      gradYear: "2025",
+      instagram: ""
+    },
+    {
+      name: "Amber Briscoe",
+      gradYear: "2025",
+      instagram: ""
+    }
+  ],
+  position: "Alumni, President"
+}
 ];
 
 const brothersData: HumanOfApo[] = [
