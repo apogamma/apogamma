@@ -27,20 +27,15 @@ const BoardPage = () => {
     setMenuOpen(!menuOpen);
   };
 
-  // Function to handle Google Drive images
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
     const target = e.target as HTMLImageElement;
     
-    // Check if this is a Google Drive URL
     if (target.src.includes('drive.google.com/open')) {
-      // Extract the ID from the Google Drive URL
       const idMatch = target.src.match(/id=([^&]+)/);
       if (idMatch && idMatch[1]) {
-        // Replace with thumbnail URL
         target.src = `https://drive.google.com/thumbnail?id=${idMatch[1]}&sz=w1000`;
       }
     } else if (target.src.includes('drive.google.com/file/d/')) {
-      // Handle direct file links
       const idMatch = target.src.match(/d\/([^/]+)/);
       if (idMatch && idMatch[1]) {
         target.src = `https://drive.google.com/thumbnail?id=${idMatch[1]}&sz=w1000`;
@@ -106,18 +101,37 @@ const BoardPage = () => {
             </div>
           </div>
         ))}
-      </div>
 
-      <div className="contact-section py-5">
-        <div className="container text-center">
-          <h2 className="fw-bold mb-4">Get in Touch</h2>
-          <p className="mb-4">
-            Have questions about our leadership or want to learn more about Alpha Phi Omega at Cornell?
+        {/* Equal Education Section */}
+        <div>
+          <h2 className="mb-4"
+          style={{ textAlign: "center", fontWeight: 500, fontSize: "1.5rem" }}
+          >
+            This organization is a registered student organization of Cornell University.
+          </h2>
+          <p className="mb-4"
+            style={{ textAlign: "center" }}
+          >
+            APO supports and upholds Cornell University's commitment to 
+            providing equal opportunity to education and employment.<br />
+            Learn more at <a href="https://hr.cornell.edu/about/workplace-rights/equal-education-and-employment">
+            Equal Education and Employment</a> page.
           </p>
-          <a href="mailto:pledgeteam@apogamma.org" className="btn btn-light px-4 py-2 fw-bold">
-            Contact Us
-          </a>
         </div>
+
+        {/* Contact Section */}
+        <div className="contact-section py-5">
+          <div className="container text-center">
+            <h2 className="fw-bold mb-4">Get in Touch</h2>
+            <p className="mb-4">
+              Have questions about our leadership or want to learn more about Alpha Phi Omega at Cornell?
+            </p>
+            <a href="mailto:pledgeteam@apogamma.org" className="btn btn-light px-4 py-2 fw-bold">
+              Contact Us
+            </a>
+          </div>
+        </div>
+
       </div>
 
       <Footer />
