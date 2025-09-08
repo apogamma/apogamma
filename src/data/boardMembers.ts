@@ -180,18 +180,18 @@ export const boardCategories: BoardCategory[] = [
     title: "Pledge Team",
     members: [
       {
-        name: 'Zia Quinn',
+        name: 'Amanda Strocko',
         position: 'Director of Pledging',
         email: 'pledgemaster@apogamma.org',
-        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1VzWFmu4X9pL_xMUsC7eWQkOsmXklrlWJ'),
-        bio: "Hi I'm Zia! I'm a junior studying HBHS from Westwood, MA. I love running and baking."
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1tbOZBtPTN5aUQxrcyIMarAVxqwZJuNUt'),
+        bio: "Hi! I'm Amanda, and I'm from Elysburg, PA. I'm a freshman majoring in Industrial and Labor Relations. My favorite place to eat in Ithaca is the Ithaca Ale House! I love spending time with friends watching movies and hiking."
       },
       {
-        name: 'Nichole Zhou',
+        name: 'Zia Quinn',
         position: 'Co-Assistant Pledgemaster: Big/Little',
         email: 'pledgeteam@apogamma.org',
-        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1ztZaJOyccUfvOhptnHz-JzOr5zF3qw1j'),
-        bio: "Hi! I'm Nichole and I'm from a suburb of Chicago. I'm a freshman studying statistics, and some of my favorite things include long walks, Smiskis, dinnertime, Nintendo games, and slope sunsets."
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1VzWFmu4X9pL_xMUsC7eWQkOsmXklrlWJ'),
+        bio: "Hi I'm Zia! I'm a junior studying HBHS from Westwood, MA. I love running and baking."
       },
       {
         name: 'Jinyu Xu',
