@@ -160,12 +160,12 @@ const Recruitment = () => {
             service projects, and fellowship activities, please visit our chapter website.
           </p>
           <a 
-            href="https://www.apoonline.org/gamma/" 
+            href="https://docs.google.com/document/d/1k2O32bbTqZMVAjFl3nVpOD7b9oI7Z-Z-ukKdnTiCl28/edit?usp=sharing" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn btn-primary fw-bold px-4 py-2"
           >
-            Visit APO Gamma Chapter Website
+            Learn more about APO Fall 2025 Rush Schedule
           </a>
         </div>
 
