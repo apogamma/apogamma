@@ -157,7 +157,7 @@ const Recruitment = () => {
           <h2 className="fw-bold text-primary mb-4">Rush Events Calendar</h2>
           <p className="mb-4">
             For the complete schedule of our Spring 2025 Rush events, including information sessions, 
-            service projects, and fellowship activities, please visit our chapter website.
+            service projects, and fellowship activities, please visit our rush schedule document.
           </p>
           <a 
             href="https://docs.google.com/document/d/1k2O32bbTqZMVAjFl3nVpOD7b9oI7Z-Z-ukKdnTiCl28/edit?usp=sharing" 
