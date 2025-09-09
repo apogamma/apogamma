@@ -12,6 +12,17 @@ jobs:
     concurrency: deploy-group    # optional: ensure only one action runs at a time
     steps:
       - uses: actions/checkout@v4
+
+      #Install pnpm
+      -name: Install pnpm
+      run: npm install -g pnpm
+
+      -name: Install dependencies
+      run: pnpm install
+
+      -name: Build production
+      run: pnpm run build
+
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
         env:
