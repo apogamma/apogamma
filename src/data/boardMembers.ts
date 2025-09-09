@@ -77,7 +77,7 @@ export const boardCategories: BoardCategory[] = [
         name: 'Kaylee Morales',
         position: 'Historian',
         email: 'historian@apogamma.org',
-        imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1tbOZBtPTN5aUQxrcyIMarAVxqwZJuNUt'),
+        imageUrl: createPlaceholder('KM'),
         bio: "Hi, I'm Kaylee"
       },
       {
