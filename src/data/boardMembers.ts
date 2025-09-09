@@ -3,7 +3,6 @@ import MarieCajouxPath from '/src/assets/boardmembers/MarieCajoux.png';
 import KiraPawletkoPath from '/src/assets/boardmembers/KiraPawletko.png';
 import SarahMcMurryPath from '/src/assets/boardmembers/SarahMcMurry.png';
 import KaitlynLimPath from '/src/assets/boardmembers/KaitlynLim.png';
-import JefferyJiangPath from '/src/assets/boardmembers/JefferyJiang.png';
 
 export interface BoardMember {
   name: string;
