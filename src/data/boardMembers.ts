@@ -196,7 +196,7 @@ export const boardCategories: BoardCategory[] = [
         name: 'Vincent Chen',
         position: 'Co-Assistant Pledgemaster: Administrative',
         email: 'pledgeteam@apogamma.org',
-        imageUrl: convertGoogleDriveUrl('https://drive.google.com/file/d/1hJdyxMV_b3SU1jFwYZ7eqnOJ3UkKcwOt/view?usp=drive_link'),
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/file/d/1hJdyxMV_b3SU1jFwYZ7eqnOJ3UkKcwOt/view?usp=sharing'),
         bio: "Hi, I'm Vincent!"
       },
       {
