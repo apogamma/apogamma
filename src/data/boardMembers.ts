@@ -74,11 +74,11 @@ export const boardCategories: BoardCategory[] = [
         bio: "Hi my name is Kaitlyn Lim, and I'm the Director of Public Relations this year! I'm from Cupertino, CA and I'm currently a junior in ILR ^^ Outside of APO I am also involved in Project Hope and CSA! I really like traveling and listening to music 🫶 Feel free to reach out if you have any questions about APO ^^"
       },
       {
-        name: 'Amanda Strocko',
+        name: 'Kaylee Morales',
         position: 'Historian',
         email: 'historian@apogamma.org',
         imageUrl: convertGoogleDriveUrl('https://drive.google.com/open?id=1tbOZBtPTN5aUQxrcyIMarAVxqwZJuNUt'),
-        bio: "Hi! I'm Amanda, and I'm from Elysburg, PA. I'm a freshman majoring in Industrial and Labor Relations. My favorite place to eat in Ithaca is the Ithaca Ale House! I love spending time with friends watching movies and hiking."
+        bio: "Hi, I'm Kaylee"
       },
       {
         name: 'Jing Zhang',
