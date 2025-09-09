@@ -197,14 +197,14 @@ export const boardCategories: BoardCategory[] = [
         position: 'Co-Assistant Pledgemaster: Administrative',
         email: 'pledgeteam@apogamma.org',
         imageUrl: convertGoogleDriveUrl('https://drive.google.com/file/d/1hJdyxMV_b3SU1jFwYZ7eqnOJ3UkKcwOt/view?usp=sharing'),
-        bio: "Hi, I'm Vincent!"
+        bio: "Hey everyone! I'm Vincent, and I am currently a sophomore majoring in Biological Sciences. I am also from Brooklyn, NY. A fun fact is that I got 3 times the amount of points on my road test than the maximum score needed to pass :("
       },
       {
         name: 'Andy Chen',
         position: 'Co-Assistant Pledgemaster: PPG',
         email: 'pledgeteam@apogamma.org',
-        imageUrl: createPlaceholder('AC'),
-        bio: "Hi, I'm Andy!"
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/file/d/1WIInir0EcugPWAobVo0x7ojobdxDcCI6/view?usp=sharing'),
+        bio: "Hello, my name is Andy and I am currently a Junior studying biological sciences in CAS. I am from NYC and I’m probably the best driver you know. I’m also a big fan of Studio Ghibli movies!"
       }
     ]
   },
