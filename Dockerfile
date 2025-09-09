@@ -51,3 +51,5 @@ COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 80
 CMD [ "/usr/sbin/nginx", "-g", "daemon off;" ]
 
+# For React, Vue, or other static builds
+COPY build/ /usr/share/nginx/html
