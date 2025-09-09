@@ -194,18 +194,18 @@ export const boardCategories: BoardCategory[] = [
         bio: "Hi I'm Zia! I'm a junior studying HBHS from Westwood, MA. I love running and baking."
       },
       {
-        name: 'Jinyu Xu',
+        name: 'Vincent Chen',
         position: 'Co-Assistant Pledgemaster: Administrative',
         email: 'pledgeteam@apogamma.org',
-        imageUrl: "https://drive.google.com/file/d/1-wu0_ft4z_6Ah6rPKe6ixHGVP7TUHIe1/view?usp=sharing",
-        bio: "Hi, I’m Jinyu! I’m a current freshman from Brooklyn, NYC, majoring in Human Development."
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/file/d/1hJdyxMV_b3SU1jFwYZ7eqnOJ3UkKcwOt/view?usp=drive_link'),
+        bio: "Hi, I'm Vincent!"
       },
       {
-        name: 'Jeffrey Jiang',
+        name: 'Andy Chen',
         position: 'Co-Assistant Pledgemaster: PPG',
         email: 'pledgeteam@apogamma.org',
-        imageUrl: JefferyJiangPath,
-        bio: "Hi! I'm Jeffrey, and I'm a sophomore studying Biological Sciences in CAS. I'm from Las Vegas, NV and love going to the gym, eating at new restaurants, and listening to music. I'm in APO because I have a strong interest in community service! Outside of APO, I'm a part of P3, Project Hope, and a molecular bio research lab."
+        imageUrl: createPlaceholder('AC'),
+        bio: "Hi, I'm Andy!"
       }
     ]
   },
