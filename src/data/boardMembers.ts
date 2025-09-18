@@ -84,7 +84,7 @@ export const boardCategories: BoardCategory[] = [
         name: 'Jing Zhang',
         position: 'Webmaster',
         email: 'webmaster@apogamma.org',
-        imageUrl: convertGoogleDriveUrl('https://drive.google.com/file/d/1jmp5BBBBZBiwfCbwcQIsGacUKxmvbYvl/view?usp=sharing'),
+        imageUrl: convertGoogleDriveUrl('https://drive.google.com/file/d/1pKb2EdxqqaaAQ1IthKD4LJkvkhl2PKKU/view?usp=sharing'),
         bio: "Hey, I'm Jing! I'm a junior in Industrial Labor Relations, and I'm from Houston, TX. Outside of APO, I'm involved in CIAS and CSA. I love hanging out with my friends, grabbing food and sweet treats, and vibing to music. I enjoy traveling and exploring new cultures, and have a cat named Aspen! Feel free to ask me anything about APO <3"
       },
       {
