@@ -235,6 +235,15 @@ const brothersData: HumanOfApo[] = [
     spotlight: "Karina Chakov",
     instagram: "@Ivor0615",
     position: "Brother"
+  },
+  {
+    name: "Madison Rosario",
+    date: "10/20/2025",
+    gradYear: "2026",
+    imageUrl: "https://drive.google.com/file/d/10ENOfkLXTMsDVLnacYO4Ur659BhHjCKo/view?usp=sharing", 
+    bio: "I decided to join APO because I really wanted to get back into doing service. I did a lot of volunteering in high school, and I really missed it. I also had a friend in APO who always talked about how amazing the organization is, so I finally decided to rush and join! My favorite memory in APO has to be judging the Sophie Fund Cupcake Contest with my fellow brothers. It was so much fun analyzing all the flavors and learning the meanings behind the cupcakes, as well as seeing everyone’s reactions when trying them. Another key memory for me is getting my Big and later my Littles—I’m very close to my line, and those moments really made APO feel like home. In the future, I hope to become a veterinarian, ideally working with wildlife and doing conservation work to help protect incredible species and the beautiful environment we live in.",
+    spotlight: "Eli Barrett",
+    position: "Brother"
   }
 ];
 
