@@ -244,6 +244,14 @@ const brothersData: HumanOfApo[] = [
     bio: "I decided to join APO because I really wanted to get back into doing service. I did a lot of volunteering in high school, and I really missed it. I also had a friend in APO who always talked about how amazing the organization is, so I finally decided to rush and join! My favorite memory in APO has to be judging the Sophie Fund Cupcake Contest with my fellow brothers. It was so much fun analyzing all the flavors and learning the meanings behind the cupcakes, as well as seeing everyone’s reactions when trying them. Another key memory for me is getting my Big and later my Littles—I’m very close to my line, and those moments really made APO feel like home. In the future, I hope to become a veterinarian, ideally working with wildlife and doing conservation work to help protect incredible species and the beautiful environment we live in.",
     spotlight: "Eli Barrett",
     position: "Brother"
+  },
+  {
+    name: "Marie Cajoux",
+    date: "11/21/2025",
+    gradYear: "2026",
+    imageUrl: "https://drive.google.com/file/d/1Y0nGl1iTWdr_LfmyOW-ucrVrtVFgTEhb/view?usp=sharing", 
+    bio: "Since elementary school, I've always been involved in trying to impact my community and advocate for the needs of the people in it. When I came to Cornell, I knew that I wanted to be involved in servicing the Ithaca community and continuing my love of helping others. During my freshmen year, I went to a women's leadership conference and ended up meeting the President of APO at that time who encouraged me to join. After seeing the kind of character this President had, I knew that APO would be an excellent organization for me to join and years later, I can say that my judgement was right and that APO has been such an amazing experience. My favorite memory in APO is volunteering at The History Center in Tompkins County. Even though I'm a pre-medical student, I've always loved history and being able to help a group that focuses on preserving the history of its people was very rewarding. Seeing artifacts and documents from centuries ago was so cool and most of all, seeing how much the staff appreciated our help definitely made it worthwhile. I'm passionate about health equity and equal access to healthcare. In the future, I hope to become a physician and work in community health centers. Being able to represent my community and care for all people is my goal. Besides my passion for healthcare, I love getting involved in service, baking, and dance. (I'm part of three dance teams on campus!)",
+    position: "Brother"
   }
 ];
 
