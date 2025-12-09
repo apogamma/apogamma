@@ -219,19 +219,19 @@ const brothersData: HumanOfApo[] = [
   },
   {
     name: "Eli Barrett",
-    date: "4/20/2025",
+    date: "11/4/2025",
     gradYear: "2028",
-    imageUrl: "https://drive.google.com/file/d/1sXfs7-ZthQkiNT20w9ta08OqXus3lu0l/view?usp=sharing", 
-    bio: "My favorite memory in APO is probably the first formal. It was the first time I really got to know my big and grand big and now I feel very close with them. APO has allowed me to find fellowship in all sorts of places at Cornell. I have so many connections just because everyone here has a drive to help others. In the future I want to do something with Biology. I really love animals and any career I take would hopefully be centered round them. Biology as a whole is an intriguing and powerful field that I hope to be able to utilize to help the creatures of the Earth someday. I am very passionate about animals, as my answer to what I hope to do in the future shows, but beyond that I love immersing myself in cultures and places very different from my own. This often takes the form of extensive traveling. It always makes me happy to spend times with friends especially when I can make them laugh. Hearing someone else laugh as a result of something I did or said to be funny always makes me happy. I also like spending time in with animals.",
+    imageUrl: "https://drive.google.com/file/d/1_Qphg5qYw6MgKpvhSlwt36sw2ljWPggR/view?usp=sharing", 
+    bio: "I wanted to find community on campus and help out around Ithaca. I have always done community service and so finding a way to do that at Cornell was very meaningful. So as a result I found APO which has fulfilled all of those goals. My favorite memory in APO was our hot ones challenge. We tried various levels of spiciness in hot sauce on chips. It was really fun and somewhat traumatic! That’s what made it fun though trauma-bonding 😂. APO has provided some of the my best friends at Cornell. I have met new people and feel like I always see people around campus who I know really creating an atmosphere of community. Not only that but it is a very fulfilling experience to spend time working toward helping community.",
     spotlight: "N/A",
     position: "Brother"
   },
   {
     name: "Ivor Mills",
-    date: "4/21/2025",
+    date: "11/18/2025",
     gradYear: "2027",
-    imageUrl: "https://drive.google.com/file/d/1V0QhOZ6IsR-0dSTL5vBz4dmsb3UJiGFO/view?usp=sharing", 
-    bio: "My favorite memory in APO is definitely volunteering for the Sophie Fund in the commons! The event was so much fun and I got to work alongside so many wonderful volunteers for such an amazing cause! APO has helped me to find my volunteerism again, as I feel like when I got to college, I had a lot of trouble finding opportunities to volunteer, which was a big part of my identity in high school! I hope to be a professor of organizational behavior/management at an R1 university! After graduating from undergrad, I will hopefully go on to pursue my PhD in a good business school! I am passionate about volunteerism, research, and academics, as well as hanging out with friends and socializing. I think that these activities are really meaningful to me, and help me in guiding my decisions! This is a hard question to answer, but I think that the friends I have made and being able to hang out with them is what makes me happiest. I think that the opportunity to socialize and hang with friends on campus really lets me destress and improve my own mental health!",
+    imageUrl: "https://drive.google.com/file/d/1HYHqsf-RXKKBfGLdVGIc7hsfluMY0QCE/view?usp=sharing", 
+    bio: "I decided to join APO because I felt that I wanted to be part of a community that values service and connection. I really liked the idea of meeting people who care about giving back while also building friendships along the way. APO has impacted my life by shaping both my leadership style and my values. Through service projects and teamwork, I’ve learned how to collaborate, communicate, and show up for others. These experiences have carried into my academic work, my research, and the way I approach everyday interactions. In the future, I hope to pursue a PhD in Organizational Behavior and build a career focused on creating more inclusive and equitable workplaces. I want to conduct research that uplifts marginalized voices and helps organizations better support their members. My long-term goal is to teach, mentor, and contribute to positive change through evidence-based research.",
     spotlight: "Karina Chakov",
     instagram: "@Ivor0615",
     position: "Brother"
